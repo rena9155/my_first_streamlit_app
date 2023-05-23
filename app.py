@@ -16,7 +16,7 @@ def load_data(path):
     return df
 
 
-dog_df_raw = load_data(path="../data/processed/Dog_data.csv")
+dog_df_raw = load_data(path="data/processed/Dog_data.csv")
 dog_df = deepcopy(dog_df_raw)
 
 # Add title and header

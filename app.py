@@ -67,3 +67,30 @@ url = "https://data.stadt-zuerich.ch/"
 st.write("Data Source:", url)
 # "This works too:", url
 
+st.subheader("Streamlit Map")
+ds_geo = px.data.carshare()
+ds_geo['lat'] = ds_geo['centroid_lat']
+ds_geo['lon'] = ds_geo['centroid_lon']
+st.map(ds_geo)
+
+# Sample Choropleth mapbox using Plotly GO
+st.subheader("Plotly Map")
+
+with open("data/processed/georef-switzerland-kanton.geojson") as json_file:
+    cantons = json.load(json_file)
+df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
+                 dtype={"fips": str})
+
+plotly_map = go.Figure(go.Choroplethmapbox(geojson=cantons,
+                                           locations=df.fips,
+                                           z=df.unemp,
+                                           colorscale="Viridis",
+                                           zmin=0, zmax=12,
+                                           marker={"opacity": 0.5, "line_width": 0}))
+plotly_map.update_layout(mapbox_style="carto-positron",
+                         mapbox_zoom=3,
+                         mapbox_center={"lat": 37.0902, "lon": -95.7129},
+                         margin={"r": 0, "t": 0, "l": 0, "b": 0})
+
+st.plotly_chart(plotly_map)
+

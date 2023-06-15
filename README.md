@@ -1,72 +1,40 @@
-# Project Name
+# My first streamlit app
 
 example image:
+<img width="1184" alt="Screenshot 2023-06-15 at 1 46 24 PM" src="https://github.com/rena9155/my_first_streamlit_app/assets/89635085/90eab7a9-9a3f-42ca-a8df-f33bc778885b">
 
 
-![alternative text](reports/img/pic01.jpg)
 
 
 #### -- Project Status: [Active, On-Hold, Completed]
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project. Limit to a short paragraph, 3-6 Sentences)
+The purpose of this project is create an interactive dashboard to show the data of Zurich registered dogs. 
 
-### Partner
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact]
-* If you do not have a partner leave this section out
+### Data Source
+* Zurich's Open Data department
+* https://data.stadt-zuerich.ch/
+  
 
 ### Methods Used
-* Inferential Statistics
-* Machine Learning
 * Data Visualization
-* Predictive Modeling
-* etc.
+* Data Preprocessing
 
 ### Technologies
-* R
 * Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc.
+* Streamlit
 
 ## Project Description
-(Provide more detailed overview of the project.
-Talk a bit about your data sources and what questions and hypothesis you are exploring.
-What specific data analysis/visualization and modelling work are you using to solve the
-problem? What blockers and challenges are you facing?
-Feel free to number or bullet point things here)
+The project was designed to get myself familiar with Streamlit
+Cleaned data on Zurich registered dog and their owners, created a Streamlit app that shows dog's age vs. dog owner's age, partitioned by dog race. The assumption is that there's no correlation between dog own's age and their fur friend's age. Which from the visualization it's easy to tell but also the data is very limited.
 
 ## Getting Started
 
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
+1. Clone this repo
+2. Raw Data is being kept [data/processed/20200306_hundehalter.csv] within this repo. The data source has already been listed above.
 
-    *If using offline data mention that and how they may obtain the data from the froup)*
-
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
-
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages)
-create another "setup.md" file and link to it here*
-
-5. Follow setup [instructions](Link to file)
-
-## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
-
-
-## Contributing Members
-
-**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])**
-
-#### Other Members:
-
- - [Full Name](https://github.com/[github handle])
- - [Full Name](https://github.com/[github handle])
+3. Data exploration/processing/transformation scripts are being kept notebooks/data_check.ipynb
+4. The cleaned dataset is being kept data/processed/Dog_data.csv
+5. The script used to create streamlit app can be found here: notebooks/app.py
+6. The app was then deployed on Streamlit (https://share.streamlit.io/)
+7. The deployed app can be viewed by the following link (https://rena9155-my-first-streamlit-app-app-nhlaeb.streamlit.app/)

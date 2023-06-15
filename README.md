@@ -6,7 +6,7 @@ example image:
 
 
 
-#### -- Project Status: [Active, On-Hold, Completed]
+#### -- Project Status: [Completed]
 
 ## Project Intro/Objective
 The purpose of this project is create an interactive dashboard to show the data of Zurich registered dogs. 

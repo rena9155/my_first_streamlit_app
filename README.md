@@ -37,4 +37,4 @@ Cleaned data on Zurich registered dog and their owners, created a Streamlit app 
 4. The cleaned dataset is being kept data/processed/Dog_data.csv
 5. The script used to create streamlit app can be found here: notebooks/app.py
 6. The app was then deployed on Streamlit (https://share.streamlit.io/)
-7. The deployed app can be viewed by the following link (https://rena9155-my-first-streamlit-app-app-nhlaeb.streamlit.app/)
+7. The deployed app can be viewed by the following link (https://rena9155-my-first-streamlit-app-notebooksapp-xkupsz.streamlit.app/)
